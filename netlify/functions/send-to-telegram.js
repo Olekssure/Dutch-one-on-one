@@ -12,24 +12,25 @@ exports.handler = async (event) => {
     
     // Проверяем согласие
     if (!consent) {
-      return { statusCode: 400, body: 'Не получено согласие' };
+      return { statusCode: 400, body: JSON.stringify({ error: 'Не получено согласие' }) };
     }
 
     // Формируем сообщение для Telegram
     const text = `📌 Новая заявка:\nИмя: ${name}\nEmail: ${email}\nТелефон: ${phone}`;
 
-    // Отправляем в Telegram
-    const telegramResponse = await fetch(`https://api.telegram.org/bot7637419490:AAFYn0YWeJKbcig6Yp3V7AGz0PaPKeuhpdI/sendMessage`, {
+    // Отправляем в Telegram (используем ваш токен и chat_id)
+    const telegramResponse = await fetch('https://api.telegram.org/bot7637419490:AAFYn0YWeJKbcig6Yp3V7AGz0PaPKeuhpdI/sendMessage', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         chat_id: '7114452953',
-        text: text
+        text: text,
+        parse_mode: 'Markdown'
       })
     });
 
     if (!telegramResponse.ok) {
-      throw new Error('Ошибка Telegram API');
+      throw new Error('Ошибка Telegram API: ' + await telegramResponse.text());
     }
 
     return {
