@@ -418,12 +418,40 @@
 
 
     <script>
-exports.handler = async () => {
-  return {
-    statusCode: 200,
-    body: JSON.stringify({ test: 'OK' })
-  };
-};
+      document.getElementById('contact-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const form = e.target;
+  const formData = new FormData(form);
+  
+  // Проверка чекбокса
+  const consentCheckbox = form.querySelector('input[name="consent"]');
+  if (!consentCheckbox.checked) {
+    alert('Будь ласка, погодьтесь з обробкою персональних даних');
+    return;
+  }
+
+  try {
+    const response = await fetch('/.netlify/functions/send-to-telegram', {
+      method: 'POST',
+      body: JSON.stringify(Object.fromEntries(formData)),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    
+    const data = await response.json();
+    if (response.ok) {
+      alert('Повідомлення відправлено!');
+      form.reset();
+    } else {
+      throw new Error(data.message || 'Помилка сервера');
+    }
+  } catch (error) {
+    console.error('Помилка:', error);
+    alert('Помилка при відправці: ' + error.message);
+  }
+});
     </script>
 
 
