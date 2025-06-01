@@ -1157,6 +1157,7 @@ img {
         font-family: "Unbounded", sans-serif;
         font-size: 1.1rem;
         font-weight: 600;
+    max-width: 100%;
 
     }
 
@@ -1269,7 +1270,7 @@ img {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
-        padding-bottom: 1rem;
+
         z-index: 1;
         position: relative;
         width: 100%;
