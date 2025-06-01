@@ -1,50 +1,37 @@
 const fetch = require('node-fetch');
 
 exports.handler = async (event) => {
+  if (event.httpMethod !== 'POST') {
+    return { statusCode: 405, body: 'Method Not Allowed' };
+  }
+
+  const { name, email, phone, message } = JSON.parse(event.body);
+  const chatId = '7114452953';
+  const botToken = process.env.TELEGRAM_BOT_TOKEN;
+  
+  const text = `📌 Новая заявка:\n\n👤 Имя: ${name}\n📧 Email: ${email}\n📞 Телефон: ${phone}\n✉️ Сообщение: ${message || 'не указано'}`;
+
   try {
-    // Проверяем метод запроса
-    if (event.httpMethod !== 'POST') {
-      return { statusCode: 405, body: 'Method Not Allowed' };
-    }
-
-    // Парсим данные формы
-    const { name, email, phone, consent } = JSON.parse(event.body);
-    
-    // Проверяем согласие
-    if (!consent) {
-      return { statusCode: 400, body: JSON.stringify({ error: 'Не получено согласие' }) };
-    }
-
-    // Формируем сообщение для Telegram
-    const text = `📌 Новая заявка:\nИмя: ${name}\nEmail: ${email}\nТелефон: ${phone}`;
-
-    // Отправляем в Telegram (используем ваш токен и chat_id)
-    const telegramResponse = await fetch('https://api.telegram.org/bot7637419490:AAFYn0YWeJKbcig6Yp3V7AGz0PaPKeuhpdI/sendMessage', {
+    const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        chat_id: '7114452953',
+        chat_id: chatId,
         text: text,
         parse_mode: 'Markdown'
       })
     });
 
-    if (!telegramResponse.ok) {
-      throw new Error('Ошибка Telegram API: ' + await telegramResponse.text());
-    }
+    if (!response.ok) throw new Error('Telegram API error');
 
     return {
       statusCode: 200,
       body: JSON.stringify({ status: 'success' })
     };
-
   } catch (error) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ 
-        status: 'error',
-        message: error.message 
-      })
+      body: JSON.stringify({ status: 'error', message: error.message })
     };
   }
 };
