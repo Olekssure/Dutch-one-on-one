@@ -26,365 +26,800 @@
 <body>
     <link rel="stylesheet" href="./style.css" />
 
+    <div class="lang-switcher">
+        <div class="lang-group">
+            <div class="lang-wrapper">
+
+                <a href="#ua" class="lang-btn active">UA</a>
+                <a href="#eng" class="lang-btn">ENG</a>
+
+            </div>
+        </div>
 
 
+        <div id="ua" class="lang-container">
 
-    <section class="menu-header">
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <div class="menu">
-                        <div class="burger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+            <section class="menu-header">
+                <header class="header">
+                    <div class="container">
+                        <div class="header__inner">
+                            <div class="menu">
+                                <div class="burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <nav class="nav">
+                                    <ul class="nav__list">
+
+                                        <li class="nav__item"><a href="#form-uah ">Про школу</a></li>
+                                        <li class="nav__item"><a href="#price-uah">формати</a></li>
+                                        <li class="nav__item"><a href="#revie-uah">відгуки</a></li>
+                                        <li class="nav__item"><a href="#price-uah">ціни</a></li>
+                                        <li class="nav__item"><a href="#cont-uah">контакти</a></li>
+                                    </ul>
+                                </nav>
+
+                                <div class="logo">
+                                    <img src="png/_Ð¡Ð»Ð¾Ð¹_1.png" alt="Логотип" class="logo__img">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </header>
+            </section>
+
+            <section class="hero">
+                <div class="hero-content container">
+                    <div class="hero-warp">
+                        <div class="logo-hero">
+                            <div class="logo-comp"><img src="png/_Ð¡Ð»Ð¾Ð¹_1.png" alt="Логотип" class="logo__img">
+                            </div>
+                            <div class="company-name">Dutch one on one</div>
                         </div>
 
-                        <nav class="nav">
-                            <ul class="nav__list">
+                        <div class="hero-title">
+                            <h1>ГОВОРІТЬ<br>НІДЕРЛАНДСЬКОЮ<br>ВПЕВНЕНО</h1>
 
-                                <li class="nav__item"><a href="#form">Про школу</a></li>
-                                <li class="nav__item"><a href="#price">формати</a></li>
-                                <li class="nav__item"><a href="#revie">відгуки</a></li>
-                                <li class="nav__item"><a href="#price">ціни</a></li>
-                                <li class="nav__item"><a href="#cont">контакти</a></li>
-                            </ul>
-                        </nav>
+                        </div>
 
-                        <div class="logo">
-                            <img src="png/_Ð¡Ð»Ð¾Ð¹_1.png" alt="Логотип" class="logo__img">
+                        <h2 class="hero-text">
+                            Індивідуальні уроки нідерландської мови. Для&nbsp;українців у Нідерландах. Онлайн,
+                            зручно,
+                            зрозуміло&nbsp;—&nbsp;вашою мовою.
+                        </h2>
+
+                        <a href="#" class="btn" style="margin-top: 30px;">БЕЗКОШТОВНИЙ УРОК</a>
+                    </div>
+                    <div class="hero-image-warp">
+                        <img class="hero-img"
+                            src="png/back-school-cute-blond-smiling-european-female-student-carry-notebooks-learning-material-look 1.png"
+                            alt="">
+                        <img class="hero-bg" src="png/bg image.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="feedback-section" id="form-uah">
+                <div class="form-warp container">
+                    <div class="feedback-content">
+                        <div class="fedback-text">
+                            <h1 style="font-weight: 300;">МИ ПРОПОНУЄМО</h1>
+                            <h2 style="font-weight: 300;margin-bottom: 1rem">
+                                Індивідуальний підхід для&nbsp;забезпечення максимальної&nbsp;эфективності у
+                                навчанні</h2>
+                            <p class="txt">Залиш свої контакти, щоб ми могли звязатися з тобою</p>
+                        </div>
+
+                        <form class="feedback-form" id="contact-form"
+                            action="https://formsubmit.co/787d5946e43046686744aff118775e6a" method="POST">
+                            <input type="hidden" name="form-name" value="contact-form">
+                            <div class="form-group">
+                                <label for="name"></label>
+                                <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone"></label>
+                                <input type="tel" id="phone" name="phone" placeholder="Ваш телефон" required>
+                            </div>
+
+                            <button href="#" type="submit" class="btn">Надіслати</button>
+
+                            <div class="checkbox-group">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="consent" required>
+                                    <!-- Добавлен name и required -->
+                                    <span class="checkmark"></span>
+                                    <p>Я погоджуюсь з обробкою персональних даних</p>
+                                </label>
+                            </div>
+
+
+                        </form>
+
+
+
+                        <div class="form-bg-warp">
+                            <img class="form-bg" src="png/bgimage form.png" alt="">
                         </div>
                     </div>
-                    <div class="lang-switcher">
-                        <button class="lang-btn active">UA</button>
-                        <button class="lang-btn">ENG</button>
-                    </div>
                 </div>
-            </div>
-        </header>
-    </section>
-
-    <section class="hero">
-        <div class="hero-content container">
-            <div class="hero-warp">
-                <div class="logo-hero">
-                    <div class="logo-comp"><img src="png/_Ð¡Ð»Ð¾Ð¹_1.png" alt="Логотип" class="logo__img"> </div>
-                    <div class="company-name">Dutch one on one</div>
-                </div>
-
-                <div class="hero-title">
-                    <h1>ГОВОРІТЬ<br>НІДЕРЛАНДСЬКОЮ<br>ВПЕВНЕНО</h1>
-
-                </div>
-
-                <h2 class="hero-text">
-                    Індивідуальні уроки нідерландської мови. Для&nbsp;українців у Нідерландах. Онлайн, зручно,
-                    зрозуміло&nbsp;—&nbsp;вашою мовою.
-                </h2>
-
-                <a href="#" class="btn" style="margin-top: 30px;">БЕЗКОШТОВНИЙ УРОК</a>
-            </div>
-            <div class="hero-image-warp">
-                <img class="hero-img"
-                    src="png/back-school-cute-blond-smiling-european-female-student-carry-notebooks-learning-material-look 1.png"
-                    alt="">
-                <img class="hero-bg" src="png/bg image.png" alt="">
-            </div>
-        </div>
-    </section>
+            </section>
 
 
-
-    <section class="feedback-section" id="form">
-        <div class="form-warp container">
-            <div class="feedback-content">
-                <div class="fedback-text">
-                    <h1 style="font-weight: 300;">МИ ПРОПОНУЄМО</h1>
-                    <h2 style="font-weight: 300;margin-bottom: 1rem">
-                        Індивідуальний підхід для&nbsp;забезпечення максимальної&nbsp;эфективності у навчанні</h2>
-                    <p class="txt">Залиш свої контакти, щоб ми могли звязатися з тобою</p>
-                </div>
-
-                <form class="feedback-form" id="contact-form" action="https://formsubmit.co/787d5946e43046686744aff118775e6a" method="POST">
-                    <input type="text" name="_honey" style="display:none">
-                    <input type="hidden" name="form-name" value="contact-form">
-                    <div class="form-group">
-                        <label for="name"></label>
-                        <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email"></label>
-                        <input type="email" id="email" name="email" placeholder="Ваш email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone"></label>
-                        <input type="tel" id="phone" name="phone" placeholder="Ваш телефон" required>
-                    </div>
-
-                    <button href="#" type="submit" class="btn">Надіслати</button>
-
-                    <div class="checkbox-group">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="consent" required> <!-- Добавлен name и required -->
-                            <span class="checkmark"></span>
-                            <p>Я погоджуюсь з обробкою персональних даних</p>
-                        </label>
-                    </div>
-
-                    
-                </form>
-
-
-
-                <div class="form-bg-warp">
-                    <img class="form-bg" src="png/bgimage form.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="advantages-section">
-        <div class="advantages container">
-            <div class="advantages">
-                <!-- Карточка 1 -->
-                <div class="advantage-card">
-                    <img class="advantage-image" src="png/Frame 2.png" alt="">
-                    <h3 style="font-weight: 400;">Гнучкий графік</h3>
-                    <p>Можливість обрати зручний для вас час навчання</p>
-                </div>
-
-                <!-- Карточка 2 -->
-                <div class="advantage-card">
-                    <img class="advantage-image" src="png/Frame 3.png" alt="">
-                    <h3 style="font-weight: 400;">Викладачі, які розуміють ваш контекст</h3>
-                    <p>Досвідчені педагоги з індивідуальним підходом</p>
-                </div>
-
-                <!-- Карточка 3 -->
-                <div class="advantage-card">
-                    <img class="advantage-image" src="png/Frame 4.png" alt="">
-                    <h3 style="font-weight: 400;">Доступна ціна</h3>
-                    <p>Якісна освіта за розумну вартість</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="practical-section">
-        <!-- Фоновое изображение -->
-        <div class="section-background">
-
-        </div>
-
-        <!-- Основной контент -->
-        <h1 style="margin-bottom: 0px;text-transform: uppercase;font-weight: 300;">Практичні теми для&nbsp;життя</h1>
-        <h2 class="section-subtitle">та роботи в Нідерландах</h2>
-
-        <p class="section-description">
-            Так як ми використовуємо <strong>ContactNT2.nl</strong> на уроках. Ми не просто вивчаємо мову — ми вчимо
-            жити нею в Нідерландах. Один із наших основних ресурсів — це <strong>ContactNT2.nl</strong>
-        </p>
-
-        <!-- Колонки -->
-        <div class="columns-container">
-            <div class="column">
-                <h3 class="column-title">Теми з реального життя</h3>
-                <p class="column-text">лікар, інтерв'ю, документи</p>
-                <div class="column-divider"></div>
-            </div>
-
-            <div class="column">
-                <h3 class="column-title">CONTACTNT2.NL</h3>
-                <p class="column-text">Використовуємо під час уроків і для домашки</p>
-                <div class="column-divider"></div>
-            </div>
-
-            <div class="column">
-                <h3 class="column-title">Посилання на замовлення</h3>
-                <p class="column-text">Потрібно придбати два підручники: Werkboek&nbsp;та&nbsp;Tekstboek.</p>
-                <div class="column-divider"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="reviews-section" id="revie">
-        <h1 class="section-title-reviews">Наші студенти пишуть</h1>
-
-        <!-- Первый ряд отзывов -->
-        <div class="reviews-row">
-            <!-- Отзыв 1 -->
-            <div class="review-card">
-                <div class="review-image">
-                    <img src="png/photo-1.png" alt="Марія">
-                </div>
-                <div class="review-content">
-                    <h3 class="review-name">Марія</h3>
-                    <p class="review-location">Харків</p>
-                    <p class="review-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-                        adipisci velit...</p>
-                </div>
-            </div>
-
-            <!-- Отзыв 2 -->
-            <div class="review-card">
-                <div class="review-image">
-                    <img src="png/photo.png" alt="Марія">
-                </div>
-                <div class="review-content">
-                    <h3 class="review-name">Марія</h3>
-                    <p class="review-location">Харків</p>
-                    <p class="review-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-                        adipisci velit...</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Второй ряд отзывов -->
-        <div class="reviews-row">
-            <!-- Отзыв 3 -->
-            <div class="review-card">
-                <div class="review-image">
-                    <img src="png/photo.png" alt="Марія">
-                </div>
-                <div class="review-content">
-                    <h3 class="review-name">Марія</h3>
-                    <p class="review-location">Харків</p>
-                    <p class="review-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-                        adipisci velit...</p>
-                </div>
-            </div>
-
-            <!-- Отзыв 4 -->
-            <div class="review-card">
-                <div class="review-image">
-                    <img src="png/photo-1.png" alt="Марія">
-                </div>
-                <div class="review-content">
-                    <h3 class="review-name">Марія</h3>
-                    <p class="review-location">Харків</p>
-                    <p class="review-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-                        adipisci velit...</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="pricing-section" id="price">
-        <!-- Фоновое изображение -->
-        <img src="png/price bg image.png" alt="Студенты" class="pricing-image">
-        <div class="pricing-warp">
-
-            <div class="pricing-container">
-                <div class="section-header">
-                    <div class="logo-warp"><img class="logo" src="png/_Ð¡Ð»Ð¾Ð¹_1.png" alt=""></div>
-                    <h1 class="section-title-price">Ціни та тарифи</h1>
-                </div>
-
-                <div class="pricing-columns">
-                    <!-- Первый тариф -->
-                    <div class="pricing-card">
-                        <h2 class="pricing-name">Індивідуальні заняття</h2>
-                        <div class="pricing-features">
-                            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                                velit...</p>
+            <section class="advantages-section">
+                <div class="advantages container">
+                    <div class="advantages">
+                        <!-- Карточка 1 -->
+                        <div class="advantage-card">
+                            <img class="advantage-image" src="png/Frame 2.png" alt="">
+                            <h3 style="font-weight: 400;">Гнучкий графік</h3>
+                            <p>Можливість обрати зручний для вас час навчання</p>
                         </div>
-                        <p class="pricing-price">від €700/год</p>
-                        <button class="pricing-btn">Обрати</button>
-                    </div>
 
-                    <!-- Второй тариф -->
-                    <div class="pricing-card">
-                        <h2 class="pricing-name">Групові заняття</h2>
-                        <div class="pricing-features">
-                            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                                velit...</p>
+                        <!-- Карточка 2 -->
+                        <div class="advantage-card">
+                            <img class="advantage-image" src="png/Frame 3.png" alt="">
+                            <h3 style="font-weight: 400;">Викладачі, які розуміють ваш контекст</h3>
+                            <p>Досвідчені педагоги з індивідуальним підходом</p>
                         </div>
-                        <p class="pricing-price">від €700/год</p>
-                        <button class="pricing-btn">Обрати</button>
+
+                        <!-- Карточка 3 -->
+                        <div class="advantage-card">
+                            <img class="advantage-image" src="png/Frame 4.png" alt="">
+                            <h3 style="font-weight: 400;">Доступна ціна</h3>
+                            <p>Якісна освіта за розумну вартість</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section class="practical-section">
+                <!-- Фоновое изображение -->
+                <div class="section-background">
+
+                </div>
+
+                <!-- Основной контент -->
+                <h1 style="margin-bottom: 0px;text-transform: uppercase;font-weight: 300;">Практичні теми
+                    для&nbsp;життя
+                </h1>
+                <h2 class="section-subtitle">та роботи в Нідерландах</h2>
+
+                <p class="section-description">
+                    Так як ми використовуємо <strong>ContactNT2.nl</strong> на уроках. Ми не просто вивчаємо мову —
+                    ми вчимо
+                    жити нею в Нідерландах. Один із наших основних ресурсів — це <strong>ContactNT2.nl</strong>
+                </p>
+
+                <!-- Колонки -->
+                <div class="columns-container">
+                    <div class="column">
+                        <h3 class="column-title">Теми з реального життя</h3>
+                        <p class="column-text">лікар, інтерв'ю, документи</p>
+                        <div class="column-divider"></div>
+                    </div>
+
+                    <div class="column">
+                        <h3 class="column-title">CONTACTNT2.NL</h3>
+                        <p class="column-text">Використовуємо під час уроків і для домашки</p>
+                        <div class="column-divider"></div>
+                    </div>
+
+                    <div class="column">
+                        <h3 class="column-title">Посилання на замовлення</h3>
+                        <p class="column-text">Потрібно придбати два підручники: Werkboek&nbsp;та&nbsp;Tekstboek.
+                        </p>
+                        <div class="column-divider"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews-section" id="revie-uah">
+                <h1 class="section-title-reviews">Наші студенти пишуть</h1>
+
+                <!-- Первый ряд отзывов -->
+                <div class="reviews-row">
+                    <!-- Отзыв 1 -->
+                    <div class="review-card">
+                        <div class="review-image">
+                            <img src="png/Frame 7.jpg" alt="Марія">
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-name">Марія</h3>
+                            <p class="review-location">Харків</p>
+                            <p class="review-text">Я починала з нуля і думала, що нідерландську неможливо вивчити.
+                                Але
+                                викладач
+                                усе пояснював доступно і зрозуміло — крок за кроком. Тепер я спокійно справляюсь з
+                                покупками,
+                                аптеками і побутовими розмовами.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Отзыв 2 -->
+                    <div class="review-card">
+                        <div class="review-image">
+                            <img src="png/Frame 6.jpg" alt="Марія">
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-name">Раві</h3>
+                            <p class="review-location">Індія</p>
+                            <p class="review-text">Викладач був терплячим і дуже уважним. Ми тренували ситуації з
+                                життя — як
+                                поговорити з лікарем чи орендодавцем. Це допомогло мені почуватися впевнено у
+                                повсякденному
+                                спілкуванні.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Второй ряд отзывов -->
+                <div class="reviews-row">
+                    <!-- Отзыв 3 -->
+                    <div class="review-card">
+                        <div class="review-image">
+                            <img src="png/Frame 8.jpg" alt="Марія">
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-name">Ірина</h3>
+                            <p class="review-location">Роттердам</p>
+                            <p class="review-text">Мені потрібно було терміново підтягнути нідерландську для роботи.
+                                Уроки
+                                були
+                                практичні, чіткі та зручні за графіком — навіть пізно ввечері. Вже за кілька занять
+                                я міг
+                                спілкуватися з колегами</p>
+                        </div>
+                    </div>
+
+                    <!-- Отзыв 4 -->
+                    <div class="review-card">
+                        <div class="review-image">
+                            <img src="png/Frame 5.jpg" alt="Марія">
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-name">Роман</h3>
+                            <p class="review-location">Бразилія</p>
+                            <p class="review-text">Я пробував групові курси раніше, але там завжди губився. На
+                                Dutch1on1 я
+                                нарешті відчув індивідуальний підхід. Заняття адаптувалися під мій темп, і це
+                                змінило все
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pricing-section" id="price-uah">
+                <!-- Фоновое изображение -->
+                <img src="png/price bg image.png" alt="Студенты" class="pricing-image">
+                <div class="pricing-warp">
+
+                    <div class="pricing-container">
+                        <div class="section-header">
+                            <div class="logo-warp"><img class="logo" style="height: auto; width:max-width:2.8rem; "
+                                    src="png/_Ð¡Ð»Ð¾Ð¹_1.png" alt=""></div>
+                            <div>
+                                <h1 class="section-title-price">Ціни та формати занять</h1>
+                                <p>Перший урок безкоштовний — без зобов'язань і передоплати.</p>
+                                <p>Ми пропонуємо два формати навчання — оберіть той, що підходить саме вам:</p>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="pricing-columns">
+                            <!-- Первый тариф -->
+                            <div class="pricing-card">
+                                <h2 class="pricing-name">Індивідуальні заняття</h2>
+                                <div class="pricing-features">
+                                    <p>Навчання один на один з викладачем.
+                                        <br>Ідеально для початківців, які хочуть працювати у власному темпі, з
+                                        максимальним
+                                        фокусом
+                                        на своїх потребах.
+                                    </p>
+                                </div>
+                                <p class="pricing-price">від €18/год</p>
+                                <button class="pricing-btn">Обрати</button>
+                            </div>
+
+                            <!-- Второй тариф -->
+                            <div class="pricing-card">
+                                <h2 class="pricing-name">Групові заняття</h2>
+                                <div class="pricing-features">
+                                    <p>Невеликі онлайн-групи (2–4 учні) з однаковим рівнем і цілями.
+                                        Чудовий варіант, якщо вам комфортно навчатися в компанії та ви шукаєте
+                                        доступніший
+                                        формат.</p>
+                                </div>
+                                <p class="pricing-price">від €10/год з особи</p>
+                                <button class="pricing-btn">Обрати</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section style="margin-top: 5rem; margin-bottom: 5rem;" class="advantages-section">
+                <div class="advantages container">
+                    <div class="advantages">
+                        <!-- Карточка 1 -->
+                        <div class="advantage-card">
+                            <img class="advantage-image" src="png/lesons img.png" alt="">
+                            <h3 style="font-weight: 400;">коротка форма знайомства
+                            </h3>
+                        </div>
+
+                        <!-- Карточка 2 -->
+                        <div class="advantage-card">
+                            <img class="advantage-image" src="png/calendar image.png" alt="">
+                            <h3 style="font-weight: 400;">Нагадування за 24 години до заняття
+                            </h3>
+                        </div>
+
+                        <!-- Карточка 3 -->
+                        <div class="advantage-card">
+                            <img class="advantage-image" src="png/word.png" alt="">
+                            <h3 style="font-weight: 400;">Відгук і пропозиція подальших кроків</h3>
+
+                        </div>
+
+                        <div class="advantage-card">
+                            <img class="advantage-image" src="png/clock image.png" alt="">
+                            <h3 style="font-weight: 400;">Нагадування за 24 години до заняття
+                            </h3>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img style="margin: 0 auto; width: 4rem;" src="png/_Ð¡Ð»Ð¾Ð¹_1.png" alt="">Dutch one on one
+                    </div>
+                    <p class="footer-description">
+                        Освітня онлайн-школа для розвитку та тренування навичок спілкування нідерландською мовою
+                    </p>
+                    <div class="footer-divider"></div>
+
+                    <div class="social-container">
+                        <!-- Facebook -->
+                        <a href="#" class="social-icon facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="#" class="social-icon instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+
+                        <!-- Telegram -->
+                        <a href="#" class="social-icon telegram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="footer-copyright">
+                        © 2023 Dutch One on One. Всі права захищені.
+                    </div>
+                </div>
+            </footer>
         </div>
-    </section>
 
-    <section style="margin-top: 5rem; margin-bottom: 5rem;" class="advantages-section">
-        <div class="advantages container">
-            <div class="advantages">
-                <!-- Карточка 1 -->
-                <div class="advantage-card">
-                    <img class="advantage-image" src="png/lesons img.png" alt="">
-                    <h3 style="font-weight: 400;">коротка форма знайомства
-                    </h3>
+        <div id="eng" class="lang-container">
+            <section class="menu-header">
+                <header class="header">
+                    <div class="container">
+                        <div class="header__inner">
+                            <div class="menu">
+                                <div class="burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <nav class="nav">
+                                    <ul class="nav__list">
+
+                                        <li class="nav__item"><a href="#form">About the school</a></li>
+                                        <li class="nav__item"><a href="#price">formats</a></li>
+                                        <li class="nav__item"><a href="#revie">reviews</a></li>
+                                        <li class="nav__item"><a href="#price">prices</a></li>
+                                        <li class="nav__item"><a href="#cont">contacts</a></li>
+                                    </ul>
+                                </nav>
+
+                                <div class="logo">
+                                    <img src="png/_Ð¡Ð»Ð¾Ð¹_1.png" alt="Логотип" class="logo__img">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </header>
+            </section>
+
+            <section class="hero">
+                <div class="hero-content container">
+                    <div class="hero-warp">
+                        <div class="logo-hero">
+                            <div class="logo-comp"><img src="png/_Ð¡Ð»Ð¾Ð¹_1.png" alt="Логотип" class="logo__img">
+                            </div>
+                            <div class="company-name">Dutch one on one</div>
+                        </div>
+
+                        <div class="hero-title">
+                            <h1>Learn Dutch <br>with Confidence</h1>
+
+                        </div>
+
+                        <h2 class="hero-text" style="max-width: 400px;">
+                            Private Dutch lessons for newcomers in the Netherlands
+                            Online. Flexible. Clear.
+                        </h2>
+
+                        <a href="#" class="btn" style="margin-top: 30px;">FREE LESSON</a>
+                    </div>
+                    <div class="hero-image-warp">
+                        <img class="hero-img"
+                            src="png/back-school-cute-blond-smiling-european-female-student-carry-notebooks-learning-material-look 1.png"
+                            alt="">
+                        <img class="hero-bg" src="png/bg image.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="feedback-section" id="form">
+                <div class="form-warp container">
+                    <div class="feedback-content">
+                        <div class="fedback-text">
+                            <h1 style="font-weight: 300;">What We Offer</h1>
+                            <h2 style="font-weight: 300;margin-bottom: 1rem">
+                                An individual approach to ensure maximum effectiveness in learning</h2>
+                            <p class="txt">Leave your contacts so we can contact you.</p>
+                        </div>
+
+                        <form class="feedback-form" id="contact-form"
+                            action="https://formsubmit.co/787d5946e43046686744aff118775e6a" method="POST">
+                            <input type="hidden" name="form-name" value="contact-form">
+                            <div class="form-group">
+                                <label for="name"></label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" placeholder="Your email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone"></label>
+                                <input type="tel" id="phone" name="phone" placeholder="Your phone" required>
+                            </div>
+
+                            <button href="#" type="submit" class="btn">Send</button>
+
+                            <div class="checkbox-group">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="consent" required>
+                                    <!-- Добавлен name и required -->
+                                    <span class="checkmark"></span>
+                                    <p>I agree to the processing of personal data</p>
+                                </label>
+                            </div>
+
+
+                        </form>
+
+
+
+                        <div class="form-bg-warp">
+                            <img class="form-bg" src="png/bgimage form.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="advantages-section">
+                <div class="advantages container">
+                    <div class="advantages">
+                        <!-- Карточка 1 -->
+                        <div class="advantage-card">
+                            <img class="advantage-image" src="png/Frame 2.png" alt="">
+                            <h3 style="font-weight: 400;">Flexible schedule</h3>
+                            <p>learn when it suits you best</p>
+                        </div>
+
+                        <!-- Карточка 2 -->
+                        <div class="advantage-card">
+                            <img class="advantage-image" src="png/Frame 3.png" alt="">
+                            <h3 style="font-weight: 400;"> Personalized approach</h3>
+                            <p>Teachers who understand your background and challenges</p>
+                        </div>
+
+                        <!-- Карточка 3 -->
+                        <div class="advantage-card">
+                            <img class="advantage-image" src="png/Frame 4.png" alt="">
+                            <h3 style="font-weight: 400;">Affordable, high-quality learning</h3>
+                            <p>no contracts, just progress</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="practical-section">
+                <!-- Фоновое изображение -->
+                <div class="section-background">
+
                 </div>
 
-                <!-- Карточка 2 -->
-                <div class="advantage-card">
-                    <img class="advantage-image" src="png/calendar image.png" alt="">
-                    <h3 style="font-weight: 400;">Нагадування за 24 години до заняття
-                    </h3>
+                <!-- Основной контент -->
+                <h1 style="margin-bottom: 0px;text-transform: uppercase;font-weight: 300;">Practical topics for life
+                </h1>
+                <h2 class="section-subtitle">and work in the Netherlands</h2>
+
+                <p class="section-description">
+                    Because we use ContactNT2.nl in our lessons. We don't just learn the language - we learn to live
+                    in the
+                    Netherlands. One of our main resources is ContactNT2.nl
+                </p>
+
+                <!-- Колонки -->
+                <div class="columns-container">
+                    <div class="column">
+                        <h3 class="column-title">Real life topics</h3>
+                        <p class="column-text">doctor, interview, documents</p>
+                        <div class="column-divider"></div>
+                    </div>
+
+                    <div class="column">
+                        <h3 class="column-title">CONTACTNT2.NL</h3>
+                        <p class="column-text">We use it during lessons and for homework.</p>
+                        <div class="column-divider"></div>
+                    </div>
+
+                    <div class="column">
+                        <h3 class="column-title">Order link</h3>
+                        <p class="column-text">You need to purchase two textbooks: Werkboek&nbsp;and&nbsp;Tekstboek.
+                        </p>
+                        <div class="column-divider"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews-section" id="revie">
+                <h1 class="section-title-reviews">Our students write</h1>
+
+                <!-- Первый ряд отзывов -->
+                <div class="reviews-row">
+                    <!-- Отзыв 1 -->
+                    <div class="review-card">
+                        <div class="review-image">
+                            <img src="png/Frame 7.jpg" alt="Марія">
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-name">Maria</h3>
+                            <p class="review-location">from Kharkiv</p>
+                            <p class="review-text">I started at zero and thought Dutch would be impossible to learn.
+                                But my
+                                teacher explained everything in a language I understand — step by step. Now I feel
+                                confident
+                                doing small things like shopping or going to the pharmacy.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Отзыв 2 -->
+                    <div class="review-card">
+                        <div class="review-image">
+                            <img src="png/Frame 6.jpg" alt="Марія">
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-name">Ravi</h3>
+                            <p class="review-location">from India</p>
+                            <p class="review-text">The teacher was patient, friendly, and never rushed me. I
+                                appreciated how
+                                we practiced real-life situations — like talking to a landlord or visiting the
+                                doctor. That
+                                gave me a lot of confidence in daily life.</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Карточка 3 -->
-                <div class="advantage-card">
-                    <img class="advantage-image" src="png/word.png" alt="">
-                    <h3 style="font-weight: 400;">Відгук і пропозиція подальших кроків</h3>
+                <!-- Второй ряд отзывов -->
+                <div class="reviews-row">
+                    <!-- Отзыв 3 -->
+                    <div class="review-card">
+                        <div class="review-image">
+                            <img src="png/Frame 8.jpg" alt="Марія">
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-name">Iryna</h3>
+                            <p class="review-location">from Rotterdam</p>
+                            <p class="review-text">I needed Dutch for work, fast. My lessons were practical, clear,
+                                and
+                                flexible — I could even book late evenings. After just a few sessions, I could have
+                                basic
+                                conversations with my Dutch colleagues.</p>
+                        </div>
+                    </div>
 
+                    <!-- Отзыв 4 -->
+                    <div class="review-card">
+                        <div class="review-image">
+                            <img src="png/Frame 5.jpg" alt="Марія">
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-name">Roman</h3>
+                            <p class="review-location">from Brazil</p>
+                            <p class="review-text">I tried group courses before, but I always felt lost. At
+                                Dutch1on1, I
+                                finally felt seen. Lessons were adjusted to my pace, and the one-on-one format made
+                                a huge
+                                difference.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-                <div class="advantage-card">
-                    <img class="advantage-image" src="png/clock image.png" alt="">
-                    <h3 style="font-weight: 400;">Нагадування за 24 години до заняття
-                    </h3>
+            <section class="pricing-section" id="price">
+                <!-- Фоновое изображение -->
+                <img src="png/price bg image.png" alt="Студенты" class="pricing-image">
+                <div class="pricing-warp">
 
+                    <div class="pricing-container">
+                        <div class="section-header">
+                            <div class="logo-warp"><img class="logo" style="height: auto; width:max-width:2.8rem; "
+                                    src="png/_Ð¡Ð»Ð¾Ð¹_1.png" alt=""></div>
+                            <div>
+                                <h1 class="section-title-price">Pricing & Lesson Formats</h1>
+                                <p>Your first lesson is free – no commitment, no pressure.</p>
+                                <p>We offer two lesson formats — choose what works best for you:</p>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="pricing-columns">
+                            <!-- Первый тариф -->
+                            <div class="pricing-card">
+                                <h2 class="pricing-name">Private Lessons</h2>
+                                <div class="pricing-features">
+                                    <p>Learn 1-on-1 with a dedicated teacher.
+                                        <br>
+                                        Perfect for beginners who want full attention, flexible scheduling, and a
+                                        personalized pace.
+
+                                    </p>
+                                </div>
+                                <p class="pricing-price">from €20/hour</p>
+                                <button class="pricing-btn">Choose</button>
+                            </div>
+
+                            <!-- Второй тариф -->
+                            <div class="pricing-card">
+                                <h2 class="pricing-name">Group Lessons </h2>
+                                <div class="pricing-features">
+                                    <p>Small online groups (2–4 students) with similar goals.
+                                        A great option if you enjoy learning with others and want a more affordable
+                                        alternative.</p>
+                                </div>
+                                <p class="pricing-price">from €10/hour per person</p>
+                                <button class="pricing-btn">Choose</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            <section style="margin-top: 5rem; margin-bottom: 5rem;" class="advantages-section">
+                <div class="advantages container">
+                    <div class="advantages">
+                        <!-- Карточка 1 -->
+                        <div class="advantage-card">
+                            <img class="advantage-image" src="png/lesons img.png" alt="">
+                            <h3 style="font-weight: 400;">short form of introduction
+                            </h3>
+                        </div>
+
+                        <!-- Карточка 2 -->
+                        <div class="advantage-card">
+                            <img class="advantage-image" src="png/calendar image.png" alt="">
+                            <h3 style="font-weight: 400;">Reminder 24 hours before class
+                            </h3>
+                        </div>
+
+                        <!-- Карточка 3 -->
+                        <div class="advantage-card">
+                            <img class="advantage-image" src="png/word.png" alt="">
+                            <h3 style="font-weight: 400;">Feedback and suggestion for next steps</h3>
+
+                        </div>
+
+                        <div class="advantage-card">
+                            <img class="advantage-image" src="png/clock image.png" alt="">
+                            <h3 style="font-weight: 400;">Reminder 24 hours before class
+                            </h3>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img style="margin: 0 auto; width: 4rem;" src="png/_Ð¡Ð»Ð¾Ð¹_1.png" alt="">Dutch one on one
+                    </div>
+                    <p class="footer-description">
+                        Educational online school for developing and training communication skills in Dutch
+                    </p>
+                    <div class="footer-divider"></div>
+
+                    <div class="social-container">
+                        <!-- Facebook -->
+                        <a href="#" class="social-icon facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="#" class="social-icon instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+
+                        <!-- Telegram -->
+                        <a href="#" class="social-icon telegram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="footer-copyright">
+                        © 2023 Dutch One on One. All rights reserved.
+                    </div>
+                </div>
+            </footer>
         </div>
-    </section>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img style="margin: 0 auto; width: 4rem;" src="png/_Ð¡Ð»Ð¾Ð¹_1.png" alt="">Dutch one on one
-            </div>
-            <p class="footer-description">
-                Освітня онлайн-школа для розвитку та тренування навичок спілкування нідерландською мовою
-            </p>
-            <div class="footer-divider"></div>
-
-            <div class="social-container">
-                <!-- Facebook -->
-                <a href="#" class="social-icon facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path
-                            d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
-                    </svg>
-                </a>
-
-                <!-- Instagram -->
-                <a href="#" class="social-icon instagram">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path
-                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                    </svg>
-                </a>
-
-                <!-- Telegram -->
-                <a href="#" class="social-icon telegram">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path
-                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z" />
-                    </svg>
-                </a>
-            </div>
-
-            <div class="footer-copyright">
-                © 2023 Dutch One on One. Всі права захищені.
-            </div>
-        </div>
-    </footer>
+    </div>
 
 
 
@@ -420,32 +855,79 @@
 
 
     <script>
-try {
-  const response = await fetch('/.netlify/functions/send-to-telegram', {
-    method: 'POST',
-    body: JSON.stringify({
-      name: formData.get('name'),
-      email: formData.get('email'),
-      phone: formData.get('phone'),
-      consent: formData.get('consent') === 'on'
-    }),
-    headers: {
-      'Content-Type': 'application/json'
+        try {
+            const response = await fetch('/.netlify/functions/send-to-telegram', {
+                method: 'POST',
+                body: JSON.stringify({
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    phone: formData.get('phone'),
+                    consent: formData.get('consent') === 'on'
+                }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json().catch(() => ({}));
+                throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            alert('Повідомлення відправлено!');
+            form.reset();
+        } catch (error) {
+            console.error('Помилка:', error);
+            alert('Помилка при відправці: ' + error.message);
+        }
+    </script>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Получаем все элементы
+    const langButtons = document.querySelectorAll('.lang-btn');
+    const langContainers = document.querySelectorAll('.lang-container');
+    
+    // Функция для переключения языка
+    function switchLanguage(targetId) {
+        // Перебираем все контейнеры и кнопки
+        langContainers.forEach(container => {
+            container.style.display = container.id === targetId ? 'block' : 'none';
+        });
+        
+        langButtons.forEach(button => {
+            if (button.getAttribute('href') === `#${targetId}`) {
+                button.classList.add('active');
+            } else {
+                button.classList.remove('active');
+            }
+        });
     }
-  });
-  
-  if (!response.ok) {
-    const errorData = await response.json().catch(() => ({}));
-    throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
-  }
-  
-  const data = await response.json();
-  alert('Повідомлення відправлено!');
-  form.reset();
-} catch (error) {
-  console.error('Помилка:', error);
-  alert('Помилка при відправці: ' + error.message);
-}
+    
+    // Обработчики кликов для кнопок
+    langButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            switchLanguage(targetId);
+            
+            // Обновляем URL без перезагрузки страницы
+            history.pushState(null, null, `#${targetId}`);
+        });
+    });
+    
+    // Проверяем хэш при загрузке страницы
+    const initialHash = window.location.hash.substring(1);
+    const validHashes = ['ua', 'eng'];
+    
+    if (validHashes.includes(initialHash)) {
+        switchLanguage(initialHash);
+    } else {
+        // По умолчанию показываем UA
+        switchLanguage('ua');
+    }
+});
     </script>
 
 
