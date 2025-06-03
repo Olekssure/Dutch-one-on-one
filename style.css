@@ -41,6 +41,33 @@ a:hover {
 
 /* Кнопки */
 
+.lang-group{
+    display: flex;
+    justify-content: center;
+}
+
+.lang-wrapper {
+        position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+    z-index: 9999;
+    gap: 0.7rem;
+    top: 2.5rem;
+    max-width: 1200px;
+    padding-left: 1rem;
+
+
+}
+.lang{
+
+    display: flex;
+    top: 2.5rem;
+
+
+
+}
 
 /* Заголовки */
 h1,
@@ -153,6 +180,30 @@ p {
 }
 
 
+
+
+
+
+
+/* Показываем контейнер в зависимости от выбранной кнопки */
+#ua-toggle:checked~.lang-content .ua {
+    display: block;
+}
+
+#eng-toggle:checked~.lang-content .eng {
+    display: block;
+}
+
+
+
+#ua-toggle:checked~.ua {
+    display: block;
+}
+
+#eng-toggle:checked~.eng {
+    display: block;
+}
+
 .nav__item a {
     text-decoration: none;
     color: #000;
@@ -179,25 +230,9 @@ p {
 
 
 
-.lang-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: all 0.3s;
-}
 
-.lang-btn.active {
-    background-color: #f0f0f0;
-    color: #FF9B00;
-}
 
-.lang-btn:hover {
-    background-color: #f5f5f5;
-}
+
 
 /*hero-section*/
 
@@ -249,13 +284,12 @@ input {
 }
 
 /* Переключатель языка */
-.lang-switcher {
-    display: flex;
-    gap: 0.3rem;
-}
+
+
 .btn {
     text-transform: uppercase;
 }
+
 .lang-btn {
     background: none;
     border: none;
@@ -265,6 +299,7 @@ input {
     padding: 5px 10px;
     border-radius: 4px;
     transition: all 0.3s;
+    font-family: "Unbounded", sans-serif;
 }
 
 .lang-btn.active {
@@ -277,37 +312,9 @@ input {
 }
 
 /* Бургер-меню (скрыто на десктопе) */
-.burger {
-    display: none;
-    width: 30px;
-    height: 20px;
-    position: relative;
-    cursor: pointer;
-    z-index: 100;
-    order: 1;
-}
 
-.burger span {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: #333;
-    left: 0;
-    transition: all 0.3s ease;
-}
 
-.burger span:nth-child(1) {
-    top: 0;
-}
 
-.burger span:nth-child(2) {
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.burger span:nth-child(3) {
-    bottom: 0;
-}
 
 .hero-text {
     color: #000000;
@@ -331,7 +338,7 @@ input {
     border: 0;
 
 
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
     max-width: 367.61px;
 
 }
@@ -343,9 +350,9 @@ input {
 
 .button {
     border: 0;
-           text-decoration: none;
+    text-decoration: none;
     color: inherit;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
     max-width: 367.61px;
 }
 
@@ -884,11 +891,13 @@ img {
     gap: 20px;
     margin-bottom: 60px;
 }
-.section-title-price{
+
+.section-title-price {
     margin-top: auto;
-    
+
     margin-bottom: auto;
 }
+
 .pricing-name {
     font-weight: 600;
     font-size: 1.8rem;
@@ -984,7 +993,7 @@ img {
 .pricing-image {
     position: absolute;
     right: -6.25rem;
-    bottom:0;
+    bottom: 0;
 
 
     width: auto;
@@ -1093,11 +1102,77 @@ img {
 
 
 
+.burger {
+    display: none;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    z-index: 100;
+    order: 1;
+}
 
+.burger span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.burger span:nth-child(1) {
+    top: 0;
+}
+
+.burger span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger span:nth-child(3) {
+    bottom: 0;
+}
 
 
 /* Медиа-запросы для адаптива */
 @media (max-width: 992px) {
+
+
+    .burger {
+        display: block;
+        order: 1;
+                position: relative;
+        z-index: 10000;
+        width: 30px;
+    height: 20px;
+        cursor: pointer;
+    }
+
+        /* Анимация бургера в крестик */
+    .burger.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 40%;
+
+    }
+
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        bottom: 50%;
+    }
+
+    .review-image {
+        max-width: 210px;
+        max-height: 170px;
+        padding: 1rem 0.5rem;
+        display: flex;
+        align-items: center;
+
+    }
 
     .hero-bg {
         display: none;
@@ -1144,6 +1219,8 @@ img {
         font-size: 1.8rem;
     }
 
+    
+
     .btn {
         display: inline-block;
         padding: 1.1rem 2.3rem;
@@ -1157,7 +1234,7 @@ img {
         font-family: "Unbounded", sans-serif;
         font-size: 1.1rem;
         font-weight: 600;
-    max-width: 100%;
+        max-width: 100%;
 
     }
 
@@ -1201,29 +1278,7 @@ img {
         padding: 100px 30px 30px;
     }
 
-    .nav.active {
-        right: 0;
-    }
 
-    .burger {
-        position: relative;
-        z-index: 10000;
-        /* Кнопка бургера поверх меню */
-    }
-
-    .nav.active {
-        right: 0;
-    }
-
-    .nav__list {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .burger {
-        display: block;
-        order: 1;
-    }
 
     .logo {
         order: 0;
@@ -1238,11 +1293,13 @@ img {
     .burger.active span:nth-child(1) {
         transform: rotate(45deg);
         top: 40%;
+        width: 20px;
+        height: 1px;
 
     }
 
     .burger.active span:nth-child(2) {
-        opacity: 0;
+        opacity: 1;
     }
 
     .burger.active span:nth-child(3) {
@@ -1341,6 +1398,7 @@ img {
     .pricing-container {
         max-width: 100%;
     }
+
 
 }
 
